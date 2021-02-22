@@ -8,6 +8,7 @@ import RoundButton from './RoundButton'
 const ImgContainer = styled.div`
     position: relative;
     max-width: 550px;
+    min-width: 200px;
     height: 225px;
     // border-style: solid;
     // border-color: green;
@@ -53,11 +54,19 @@ const TGImage = styled.img`
     z-index: 3;
 `;
 
+const ButtonHolder = styled.div`
+    display:flex;
+    flex-wrap:wrap;
+`
+
 export class LandingPage extends Component {
     render() {
         return <div>
-        <RoundButton color="orange">LOG IN</RoundButton>
-        <RoundButton color="red">SIGN UP</RoundButton>
+            <ButtonHolder style={{ justifyContent:'flex-end' }}>
+                <RoundButton style={{ order: 1 }} color="orange">LOG IN</RoundButton>
+                <RoundButton style={{ order: 2 }} color="red">SIGN UP</RoundButton>
+            </ButtonHolder>
+
         <ImgContainer>
             <PipelineImage src={pipeline_logo} alt="Background Image of Pipeline" />            
             <SubImgContainer>
@@ -69,8 +78,11 @@ export class LandingPage extends Component {
                 </a>
             </SubImgContainer>
         </ImgContainer>
-        <RoundButton style={{left:"0px"}} color="BLACK">ONBOARD</RoundButton>
-        <RoundButton style={{right:"0px"}} color="BLACK">GENERATE</RoundButton>
+
+        <ButtonHolder>
+            <RoundButton color="BLACK">ONBOARD</RoundButton>
+            <RoundButton color="BLACK">GENERATE</RoundButton>
+        </ButtonHolder>
         </div>        
     }
 }

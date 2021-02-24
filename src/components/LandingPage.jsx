@@ -72,10 +72,12 @@ const TitleHolder = styled.div`
 export class LandingPage extends Component {
     render() {
         return <div>
-            <ButtonHolder style={{ justifyContent:'flex-end' }}>
-                <RoundButton disabled style={{ order: 1 }} color="orange" onClick={() => {console.log('clicked orange')}}>LOG IN</RoundButton>
-                <RoundButton style={{ order: 2 }} color="red" onClick={() => {console.log('clicked red')}}>SIGN UP</RoundButton>
+            <ButtonHolder style={{ justifyContent:'flex-end', minHeight: '40px'}}>
+                {/* <RoundButton style={{ order: 1 }} color="orange" onClick={() => {console.log('clicked orange')}}>LOG IN</RoundButton>
+                <RoundButton style={{ order: 2 }} color="red" onClick={() => {console.log('clicked red')}}>SIGN UP</RoundButton> */}
             </ButtonHolder>
+
+            <br/>
 
         <ContentHolder>
             <ImgContainer>
@@ -92,12 +94,14 @@ export class LandingPage extends Component {
             <TitleHolder>
                 <h1>BAAP</h1>
                 <h4>Blender as a Pipeline</h4>
-                <ButtonHolder>
-                    <RoundButton color="BLACK">ONBOARD</RoundButton>
-                    <RoundButton color="BLACK">GENERATE</RoundButton>
+                <ButtonHolder >
+                    <RoundButton color="BLACK" disabled>ONBOARD</RoundButton>
+                    <RoundButton color="BLACK">DOWNLOAD</RoundButton>
                 </ButtonHolder>
             </TitleHolder>
         </ContentHolder>
         </div>        
     }
 }
+
+// style={{borderStyle: 'solid', borderColor: 'green'}}

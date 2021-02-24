@@ -9,15 +9,15 @@ const ButtonWrapper = styled.div`
 const Button = styled.button`
     height:  40px;
     width:   135px;
-    border-radius:21px;
-    border:none;
+    border-radius: 20px;
+    border: none;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.25);
     transition: transform, 0.5s;
     transition: box-shadow, 0.5s;
     font-family: 'Avenir', Helvetica, sans-serif;
 
     &:hover {
-        position:relative;
+        position: relative;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
         transform: translate(-3px, -3px);
     }
@@ -30,23 +30,22 @@ const ButtonHolder = styled.div`
 `
 
 const getStyleFromProps = (props) => {
-    if (props.color === 'black') {
-        return {
-            backgroundColor: 'black',
-            color: 'white'
-        }
-    } else if (props.disabled) {
-        return {
+    var style = {
+        backgroundColor: props.color,
+        color: 'white'
+    }
+
+    if (props.disabled) {
+        style = {
+            ...style,
             backgroundImage: 'repeating-linear-gradient(45deg, ' + props.color + ' 0 10px, grey 10px 20px)',
-            color: 'black',
-            disabled: true
-        }
-    } else {
-        return {
-            backgroundColor: props.color,
+            disabled: true,
             color: 'white'
+            // "&:hover": {} // todo figure out how to make this configurable for disabled
         }
     }
+
+    return style;
 }
 
 class RoundButton extends Component {

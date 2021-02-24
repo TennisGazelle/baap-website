@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: local('../fonts/Avenir\ Medium/Avenir\ Medium.tff'); /* IE9 Compat Modes */
+}
+
+h1 {
+  font-weight: bold;
+  /* color: #fff; */
+  font-size: 72px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-top: 0px;
 }

@@ -96,7 +96,9 @@ export class LandingPage extends Component {
                 <h4>Blender as a Pipeline</h4>
                 <ButtonHolder >
                     <RoundButton color="BLACK" disabled>ONBOARD</RoundButton>
-                    <RoundButton color="BLACK">DOWNLOAD</RoundButton>
+                    <a href="https://github.com/TennisGazelle/blender-pipeline/archive/v0.0.1.zip">
+                        <RoundButton color="BLACK" >DOWNLOAD</RoundButton>
+                    </a>
                 </ButtonHolder>
             </TitleHolder>
         </ContentHolder>

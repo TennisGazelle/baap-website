@@ -23,15 +23,27 @@ const Button = styled.button`
     }
 `
 
-const getStyleFromColor = (color) => {
-    if (color === 'black') {
+const ButtonHolder = styled.div`
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+`
+
+const getStyleFromProps = (props) => {
+    if (props.color === 'black') {
         return {
             backgroundColor: 'black',
             color: 'white'
         }
+    } else if (props.disabled) {
+        return {
+            backgroundImage: 'repeating-linear-gradient(45deg, ' + props.color + ' 0 10px, grey 10px 20px)',
+            color: 'black',
+            disabled: true
+        }
     } else {
         return {
-            backgroundColor: color,
+            backgroundColor: props.color,
             color: 'white'
         }
     }
@@ -41,7 +53,7 @@ class RoundButton extends Component {
 
     render() {
         return <ButtonWrapper>
-            <Button style={getStyleFromColor(this.props.color)}>
+            <Button style={getStyleFromProps(this.props)}>
                 {this.props.children}
             </Button>
         </ButtonWrapper>
@@ -50,7 +62,12 @@ class RoundButton extends Component {
 }
 
 RoundButton.propTypes = {
-    color: PropTypes.string.isRequired
+    color: PropTypes.string.isRequired,
+    disabled: PropTypes.bool
 };
 
 export default RoundButton;
+
+export {
+    ButtonHolder
+};

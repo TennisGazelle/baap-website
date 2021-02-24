@@ -99,6 +99,9 @@ export class LandingPage extends Component {
                     <a href="https://github.com/TennisGazelle/blender-pipeline/archive/v0.0.1.zip">
                         <RoundButton color="BLACK" >DOWNLOAD</RoundButton>
                     </a>
+                    <a href="https://github.com/TennisGazelle/blender-pipeline/" target="_blank" rel="noreferrer">
+                        <RoundButton color="BLACK">SOURCE</RoundButton>
+                    </a>
                 </ButtonHolder>
             </TitleHolder>
         </ContentHolder>

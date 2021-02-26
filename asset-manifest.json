@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/baap-website/static/css/main.c463a91e.chunk.css",
+    "main.js": "/baap-website/static/js/main.627a15ef.chunk.js",
+    "main.js.map": "/baap-website/static/js/main.627a15ef.chunk.js.map",
+    "runtime-main.js": "/baap-website/static/js/runtime-main.c9dcf456.js",
+    "runtime-main.js.map": "/baap-website/static/js/runtime-main.c9dcf456.js.map",
+    "static/js/2.28420c08.chunk.js": "/baap-website/static/js/2.28420c08.chunk.js",
+    "static/js/2.28420c08.chunk.js.map": "/baap-website/static/js/2.28420c08.chunk.js.map",
+    "static/js/3.7391741b.chunk.js": "/baap-website/static/js/3.7391741b.chunk.js",
+    "static/js/3.7391741b.chunk.js.map": "/baap-website/static/js/3.7391741b.chunk.js.map",
+    "index.html": "/baap-website/index.html",
+    "static/css/main.c463a91e.chunk.css.map": "/baap-website/static/css/main.c463a91e.chunk.css.map",
+    "static/js/2.28420c08.chunk.js.LICENSE.txt": "/baap-website/static/js/2.28420c08.chunk.js.LICENSE.txt",
+    "static/media/blender_logo.7d7ac3d5.svg": "/baap-website/static/media/blender_logo.7d7ac3d5.svg",
+    "static/media/pipeline.1a716070.png": "/baap-website/static/media/pipeline.1a716070.png",
+    "static/media/tennisgazelle_logo.ca93eb6c.png": "/baap-website/static/media/tennisgazelle_logo.ca93eb6c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9dcf456.js",
+    "static/js/2.28420c08.chunk.js",
+    "static/css/main.c463a91e.chunk.css",
+    "static/js/main.627a15ef.chunk.js"
+  ]
+}

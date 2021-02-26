@@ -1,5 +1,12 @@
-# baap-website
-Blender as a Pipeline Website
+# BAAP (Website Repo)
+## [Blender as a Pipeline](https://tennisgazelle.github.io/baap-website/) - [Daniel Lopez (TennisGazelle)](https://tennisgazelle.com)
+
+
+![Blender Pipeline Logo](src/imgs/logo.svg)
+
+> Below is the information to help you get started with the React App if you'd like to contribute.
+> To go to the pipeline repo, you can go here: https://github.com/TennisGazelle/blender-pipeline/
+
 
 ## Getting Started with Create React App
 

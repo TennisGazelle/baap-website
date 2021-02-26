@@ -19,14 +19,23 @@ code {
   src: local('../fonts/Avenir\ Medium/Avenir\ Medium.tff'); /* IE9 Compat Modes */
 }
 
+@font-face {
+  font-family: 'Avenir';
+  font-style: bold;
+  font-weight: 400;
+  src: local('../fonts/Avenir\ Black/Avenir\ Black.tff'); /* IE9 Compat Modes */
+}
+
 h1 {
-  font-weight: bold;
+  font-style: bold;
   /* color: #fff; */
   font-size: 72px;
   margin-top: 0px;
   margin-bottom: 20px;
 }
 
-h4 {
+h2 {
+  font-weight: normal;
+  font-size: 30px;
   margin-top: 0px;
 }

@@ -4,6 +4,7 @@ import blender_logo from '../imgs/blender_logo.svg';
 import tennisgazelle_logo from '../imgs/tennisgazelle_logo.png';
 import styled from 'styled-components'
 import RoundButton, { ButtonHolder } from './RoundButton'
+import links from './Links.json'
 
 const ImgContainer = styled.div`
     position: relative;
@@ -43,6 +44,15 @@ const BlenderImage = styled.img`
     height: auto;
 
     z-index: 2;
+    filter: drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.25));
+
+    transition: transform, 0.5s;
+    transition: filter, 0.5s;
+    &:hover {
+        position: relative;
+        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.15));
+        transform: translate(-3px, -3px);
+    }
 `;
 
 const TGImage = styled.img`
@@ -83,23 +93,23 @@ export class LandingPage extends Component {
             <ImgContainer>
                 <PipelineImage src={pipeline_logo} alt="Background Image of Pipeline" />
                 <SubImgContainer>
-                    <a href="https://blender.org" target="_blank" rel="noreferrer">
+                    <a href={links.blender_home} target="_blank" rel="noreferrer">
                         <BlenderImage src={blender_logo} alt="Blender Logo"/>
                     </a>
-                    <a href="https://tennisgazelle.com/" target="_blank" rel="noreferrer">
+                    <a href={links.tennisgazelle_home} target="_blank" rel="noreferrer">
                         <TGImage src={tennisgazelle_logo} alt="Website Author Logo" />
                     </a>
                 </SubImgContainer>
             </ImgContainer>
             <TitleHolder>
                 <h1>BAAP</h1>
-                <h4>Blender as a Pipeline</h4>
+                <h2>Blender as a Pipeline</h2>
                 <ButtonHolder >
                     <RoundButton color="BLACK" disabled>ONBOARD</RoundButton>
-                    <a href="https://github.com/TennisGazelle/blender-pipeline/archive/v0.0.1.zip">
+                    <a href={links.github.latest_release}>
                         <RoundButton color="BLACK" >DOWNLOAD</RoundButton>
                     </a>
-                    <a href="https://github.com/TennisGazelle/blender-pipeline/" target="_blank" rel="noreferrer">
+                    <a href={links.github.main} target="_blank" rel="noreferrer">
                         <RoundButton color="BLACK">SOURCE</RoundButton>
                     </a>
                 </ButtonHolder>

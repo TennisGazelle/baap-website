@@ -22,6 +22,11 @@ const getBarStyleFromProps = (props) => {
     }
     if (!props.isInvisible) {
         style.backgroundColor = props.color
+    } else {
+        style = {
+            ...style,
+            "box-shadow": ""
+        }
     }
     return style;
 }
@@ -35,10 +40,13 @@ const getTextStyleFromProps = (props) => {
 
 export class Header extends Component {
     render() {
-        return <HeaderStyle style={getBarStyleFromProps(this.props)}>
-            <CornerLogo src={logo} alt="Corner Logo to Home Page"/>
-            <h3 style={getTextStyleFromProps(this.props)}>Blender as a Pipeline</h3>
-        </HeaderStyle>
+        return this.props.isInvisible ? 
+            <HeaderStyle style={getBarStyleFromProps(this.props)}> </HeaderStyle> : 
+
+            <HeaderStyle style={getBarStyleFromProps(this.props)}>
+                <CornerLogo src={logo} alt="Corner Logo to Home Page"/>
+                <h3 style={getTextStyleFromProps(this.props)}>Blender as a Pipeline</h3>
+            </HeaderStyle>
     }
 }
 

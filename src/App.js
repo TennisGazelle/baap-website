@@ -5,7 +5,7 @@ import { LandingPage } from './components/LandingPage';
 function App() {
   return (
     <div className="App">
-      {/* <LandingPage /> */}
+      <LandingPage />
       <ConfigPage />
 
       {/* <header className="App-header"> */}

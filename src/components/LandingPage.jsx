@@ -1,11 +1,11 @@
-import { Component } from 'react';
+import { Component } from 'react'
 import pipeline_logo from '../imgs/pipeline.png'
-import blender_logo from '../imgs/blender_logo.svg';
-import tennisgazelle_logo from '../imgs/tennisgazelle_logo.png';
+import blender_logo from '../imgs/blender_logo.svg'
+import tennisgazelle_logo from '../imgs/tennisgazelle_logo.png'
 import styled from 'styled-components'
 import RoundButton, { ButtonHolder } from './RoundButton'
 import links from './Links.json'
-import Header from './Header';
+import Header from './Header'
 
 const ImgContainer = styled.div`
     position: relative;
@@ -14,7 +14,7 @@ const ImgContainer = styled.div`
     height: 225px;
     // border-style: solid;
     // border-color: green;
-`;
+`
 
 const PipelineImage = styled.img`
     position: absolute;
@@ -22,7 +22,7 @@ const PipelineImage = styled.img`
     width: 100%;
     height: auto;
     z-index: 1;
-`;
+`
 
 const SubImgContainer = styled.div`
     position: absolute;
@@ -34,7 +34,7 @@ const SubImgContainer = styled.div`
     align-items: center;
     // border-style: solid;
     // border-color: red;
-`;
+`
 
 const BlenderImage = styled.img`
     position: absolute;
@@ -54,7 +54,7 @@ const BlenderImage = styled.img`
         filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.15));
         transform: translate(-3px, -3px);
     }
-`;
+`
 
 const TGImage = styled.img`
     position: absolute;
@@ -63,7 +63,7 @@ const TGImage = styled.img`
     right: 0;
     width: 20%;
     z-index: 3;
-`;
+`
 
 const ContentHolder = styled.div`
     display: flex;
@@ -90,7 +90,7 @@ export class LandingPage extends Component {
 
             <Header isInvisible />
 
-            <br/>
+            <br style={{ fontSize: 36 }}/>
 
             <ContentHolder>
                 <ImgContainer>

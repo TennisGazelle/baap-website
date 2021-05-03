@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const ButtonWrapper = styled.div`
     padding:10px;

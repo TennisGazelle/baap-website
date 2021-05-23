@@ -3,7 +3,7 @@
     "tennisgazelle_home": "https://tennisgazelle.com",
     "github":{
         "main": "https://github.com/TennisGazelle/blender-pipeline/",
-        "latest_release": "https://github.com/TennisGazelle/blender-pipeline/archive/v0.0.1.zip"
+        "latest_release": "https://github.com/TennisGazelle/blender-pipeline/releases/latest"
     }
 
 }

@@ -118,7 +118,7 @@ export const LandingPage = () => {
         </TitleHolder>
 
         <TitleHolder>
-            <h3 style={{ maxWidth: '500px' }}>This project is back in active development, consider donating.  For more information on this project, and to see if it's a right fit for your small studio, visit <a style={{'textDecoration': 'none'}} href={links.github.wiki}>the wiki.</a></h3>
+            <h3 style={{ maxWidth: '500px' }}>This project is back in active development, consider donating.  For more information on this project, and to see if it's a right fit for yourself or your small studio, visit <a style={{'textDecoration': 'none'}} href={links.github.wiki}>the wiki.</a></h3>
             <p style={{ maxWidth: '500px', justifyContent: 'center' }}>
                 Blender Pipeline: a community-driven set of tools & workflows for 3D artists to create high-quality assets for game engines & real-time apps. Custom scene settings, optimized mesh generation, UV mapping, & texture baking included.
             </p>

@@ -18,14 +18,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
     "src/**/*.tsx",
     "src/**/*.js",
     "src/**/*.jsx",
-    "src/**/*.png", 
-    "src/components/LandingPage.jsx", 
-    "src/components/RoundButton.jsx"  
+    "src/**/*.png",
+    "next-env.d.ts",
+    // "src/components/**.jsx",
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

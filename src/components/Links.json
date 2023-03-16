@@ -3,7 +3,8 @@
     "tennisgazelle_home": "https://tennisgazelle.com",
     "github":{
         "main": "https://github.com/TennisGazelle/blender-pipeline/",
-        "latest_release": "https://github.com/TennisGazelle/blender-pipeline/releases/latest"
-    }
-
+        "latest_release": "https://github.com/TennisGazelle/blender-pipeline/releases/latest",
+        "wiki": ""
+    },
+    "donation": "https://www.buymeacoffee.com/tennisgazelle"
 }

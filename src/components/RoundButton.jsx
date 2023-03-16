@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
@@ -32,7 +32,7 @@ const ButtonHolder = styled.div`
 const getStyleFromProps = (props) => {
     var style = {
         backgroundColor: props.color,
-        color: 'white'
+        color: props.fontColor || 'white'
     }
 
     if (props.disabled) {

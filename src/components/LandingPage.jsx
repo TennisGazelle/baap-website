@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import pipeline_logo from '../imgs/pipeline.png'
 import blender_logo from '../imgs/blender_logo.svg';
 import tennisgazelle_logo from '../imgs/tennisgazelle_logo.png';
@@ -79,44 +79,53 @@ const TitleHolder = styled.div`
     justify-content: center;
 `
 
-export class LandingPage extends Component {
-    render() {
-        return <div>
-            <ButtonHolder style={{ justifyContent:'flex-end', minHeight: '40px'}}>
-                {/* <RoundButton style={{ order: 1 }} color="orange" onClick={() => {console.log('clicked orange')}}>LOG IN</RoundButton>
-                <RoundButton style={{ order: 2 }} color="red" onClick={() => {console.log('clicked red')}}>SIGN UP</RoundButton> */}
+export const LandingPage = () => {
+    return <div>
+        <ButtonHolder style={{ justifyContent:'flex-end', minHeight: '40px'}}>
+            {/* <RoundButton style={{ order: 1 }} color="orange" onClick={() => {console.log('clicked orange')}}>LOG IN</RoundButton>
+            <RoundButton style={{ order: 2 }} color="red" onClick={() => {console.log('clicked red')}}>SIGN UP</RoundButton> */}
+        </ButtonHolder>
+
+        <br/>
+
+    <ContentHolder>
+        <ImgContainer>
+            <PipelineImage src={pipeline_logo} alt="Background Image of Pipeline" />
+            <SubImgContainer>
+                <a href={links.blender_home} target="_blank" rel="noreferrer">
+                    <BlenderImage src={blender_logo} alt="Blender Logo"/>
+                </a>
+                <a href={links.tennisgazelle_home} target="_blank" rel="noreferrer">
+                    <TGImage src={tennisgazelle_logo} alt="Website Author Logo" />
+                </a>
+            </SubImgContainer>
+        </ImgContainer>
+        <TitleHolder>
+            <h1>BAAP</h1>
+            <h2>Blender as a Pipeline</h2>
+            <ButtonHolder >
+                <RoundButton color="BLACK" disabled>ONBOARD</RoundButton>
+                <a href={links.github.latest_release}>
+                    <RoundButton color="GREY" >DOWNLOAD</RoundButton>
+                </a>
+                <a href={links.github.main} target="_blank" rel="noreferrer">
+                    <RoundButton color="GREY">SOURCE</RoundButton>
+                </a>
+                <a href={links.github.main} target="_blank" rel="noreferrer">
+                    <RoundButton color="GOLD" fontColor="BLACK">DONATE</RoundButton>
+                </a>
             </ButtonHolder>
+        </TitleHolder>
 
-            <br/>
-
-        <ContentHolder>
-            <ImgContainer>
-                <PipelineImage src={pipeline_logo} alt="Background Image of Pipeline" />
-                <SubImgContainer>
-                    <a href={links.blender_home} target="_blank" rel="noreferrer">
-                        <BlenderImage src={blender_logo} alt="Blender Logo"/>
-                    </a>
-                    <a href={links.tennisgazelle_home} target="_blank" rel="noreferrer">
-                        <TGImage src={tennisgazelle_logo} alt="Website Author Logo" />
-                    </a>
-                </SubImgContainer>
-            </ImgContainer>
-            <TitleHolder>
-                <h1>BAAP</h1>
-                <h2>Blender as a Pipeline</h2>
-                <ButtonHolder >
-                    <RoundButton color="BLACK" disabled>ONBOARD</RoundButton>
-                    <a href={links.github.latest_release}>
-                        <RoundButton color="BLACK" >DOWNLOAD</RoundButton>
-                    </a>
-                    <a href={links.github.main} target="_blank" rel="noreferrer">
-                        <RoundButton color="BLACK">SOURCE</RoundButton>
-                    </a>
-                </ButtonHolder>
-            </TitleHolder>
-        </ContentHolder>
-        </div>        
-    }
+        <TitleHolder>
+            <h3 style={{ maxWidth: '500px' }}>This project is back in active development, consider donating.  For more information on this project, and to see if it's a right fit for your small studio, visit <a style={{'textDecoration': 'none'}} href={links.github.wiki}>the wiki.</a></h3>
+            <p style={{ maxWidth: '500px', justifyContent: 'center' }}>
+                Blender Pipeline: a community-driven set of tools & workflows for 3D artists to create high-quality assets for game engines & real-time apps. Custom scene settings, optimized mesh generation, UV mapping, & texture baking included.
+            </p>
+        </TitleHolder>
+    </ContentHolder>
+    </div>
 }
 
 // style={{borderStyle: 'solid', borderColor: 'green'}}
+// export default LandingPage;

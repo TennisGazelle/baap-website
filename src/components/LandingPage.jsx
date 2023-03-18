@@ -111,7 +111,7 @@ export const LandingPage = () => {
                 <a href={links.github.main} target="_blank" rel="noreferrer">
                     <RoundButton color="GREY">SOURCE</RoundButton>
                 </a>
-                <a href={links.github.main} target="_blank" rel="noreferrer">
+                <a href={links.donation} target="_blank" rel="noreferrer">
                     <RoundButton color="GOLD" fontColor="BLACK">DONATE</RoundButton>
                 </a>
             </ButtonHolder>
